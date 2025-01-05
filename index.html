@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio | Software Developer & Digital Marketer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="logo">
+                    <i class="fas fa-laptop-code"></i>
+                    AM
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <i class="fas fa-user-circle"></i>
+                            <span>About Me</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Experience</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">
+                            <i class="fas fa-tools"></i>
+                            <span>Skills</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- Hero Section -->
+        <div class="hero-container">
+            <div class="hero-split">
+                <!-- Left Side - Profile Image -->
+                <div class="hero-image">
+                    <div class="profile-frame">
+                        <img src="images/profile-placeholder.jpg" alt="Your Name">
+                    </div>
+                </div>
+    
+                <!-- Right Side - Content -->
+                <div class="hero-content">
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">Your Name</span></h1>
+                    <p class="hero-tagline">Full Stack Developer & Digital Marketing Specialist</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="cta-btn primary">View My Work</a>
+                        <a href="#contact" class="cta-btn secondary">Get in Touch</a>
+                        <a href="assets/resume.pdf" class="cta-btn secondary" download>Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>With over 6 years of experience in software development and digital marketing, I specialize in creating robust solutions using Core PHP, Laravel, and implementing cutting-edge AI technologies. My journey includes successful delivery of ISP Bandwidth & Billing Management systems and Wi-Fi Hotspot Management solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="php">Core PHP</button>
+                <button class="filter-btn" data-filter="laravel">Laravel</button>
+                <button class="filter-btn" data-filter="restapi">REST API</button>
+                <button class="filter-btn" data-filter="marketing">Digital Marketing</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project cards will be dynamically loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-grid">
+                <!-- Mediscribes -->
+                <div class="experience-card" data-company="mediscribes">
+                    <div class="experience-summary">
+                        <div class="exp-company">
+                            <i class="fas fa-building"></i>
+                            Mediscribes
+                        </div>
+                        <div class="exp-role">Laravel Developer (Software Engineer)</div>
+                        <div class="exp-date">Mar 2023 - Present</div>
+                        <button class="details-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="experience-details">
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <h4>Designation</h4>
+                                <p>Laravel Developer (Software Engineer)</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Experience</h4>
+                                <p>2 years</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Duration</h4>
+                                <p>16/03/2023 - Present</p>
+                            </div>
+                        </div>
+                        <div class="projects-section">
+                            <div class="project-category">
+                                <div class="category-header">
+                                    <h4><i class="fab fa-laravel"></i> Laravel Projects</h4>
+                                    <span class="project-count-badge">3 Projects</span>
+                                </div>
+                                <div class="project-grid">
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>Empower eLearning (CMS Project)</h5>
+                                        <p class="project-desc">Created an All-In-One Solution Software for the eLearning industry. Built SAAS Software CMS operations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-category">
+                                <div class="category-header">
+                                    <h4><i class="fas fa-server"></i> REST API Projects</h4>
+                                    <span class="project-count-badge">1 Project</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wipra World Wide -->
+                <div class="experience-card" data-company="wipra">
+                    <div class="experience-summary">
+                        <div class="exp-company">
+                            <i class="fas fa-building"></i>
+                            WIPRA WORLD WILD
+                        </div>
+                        <div class="exp-role">PHP Laravel Developer</div>
+                        <div class="exp-date">Jul 2020 - Mar 2023</div>
+                        <button class="details-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="experience-details">
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <h4>Designation</h4>
+                                <p>PHP & Laravel Developer</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Experience</h4>
+                                <p>2.6 Years</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Duration</h4>
+                                <p>06/07/2020 - 31/12/2022</p>
+                            </div>
+                        </div>
+
+                        <div class="projects-section">
+                            <div class="project-category">
+                                <div class="category-header">
+                                    <h4><i class="fas fa-code"></i> Core PHP Projects</h4>
+                                    <span class="project-count-badge">9 Projects</span>
+                                </div>
+                                <div class="project-grid">
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>Finanace</h5>
+                                        <p class="project-desc">Two-Wheeler Loan Management Software for streamlined loan processing</p>
+                                    </div>
+
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>Loanmela</h5>
+                                        <p class="project-desc">Loan Management Software for application and approval processing</p>
+                                    </div>
+
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>Jewel</h5>
+                                        <p class="project-desc">POS Billing & Inventory Management for jewelry businesses</p>
+                                    </div>
+
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>WipraCRM</h5>
+                                        <p class="project-desc">Customer Relationship Management Software for enhanced interactions</p>
+                                    </div>
+
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>Spark</h5>
+                                        <p class="project-desc">All-In-One Software for automotive industry management</p>
+                                    </div>
+
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>AJP Coffey (US Project)</h5>
+                                        <p class="project-desc">Ticket and Support Management Software for customer service</p>
+                                    </div>
+
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>Ornasoft</h5>
+                                        <p class="project-desc">Jeweler Software for managing sales and inventory operations</p>
+                                    </div>
+
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>Shraddhanjali</h5>
+                                        <p class="project-desc">Platform for managing and honoring deceased individuals</p>
+                                    </div>
+
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>Smartbuy</h5>
+                                        <p class="project-desc">E-commerce software solution for online buying and selling</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-category">
+                                <div class="category-header">
+                                    <h4><i class="fab fa-laravel"></i> Laravel Projects</h4>
+                                    <span class="project-count-badge">4 Projects</span>
+                                </div>
+                                <div class="project-grid">
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>Autosoft</h5>
+                                        <p class="project-desc">All-In-One Solution Software for automotive operations</p>
+                                    </div>
+
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>Finance (Bangladesh)</h5>
+                                        <p class="project-desc">Loan and Payment Collection & Reporting Software</p>
+                                    </div>
+
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>MasterChef</h5>
+                                        <p class="project-desc">Food, Event, Inventory, and Report Management Software</p>
+                                    </div>
+
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>Ornasoft</h5>
+                                        <p class="project-desc">Comprehensive jewelry business management software</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PHPITLAB -->
+                <div class="experience-card" data-company="phpitlab">
+                    <div class="experience-summary">
+                        <div class="exp-company">
+                            <i class="fas fa-building"></i>
+                            PHPITLAB
+                        </div>
+                        <div class="exp-role">PHP Developer</div>
+                        <div class="exp-date">May 2018 - May 2020</div>
+                        <button class="details-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="experience-details">
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <h4>Designation</h4>
+                                <p>PHP Web Developer</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Experience</h4>
+                                <p>2 Years</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Duration</h4>
+                                <p>20/05/2018 - 20/05/2020</p>
+                            </div>
+                        </div>
+
+                        <div class="projects-section">
+                            <div class="project-category development-projects">
+                                <div class="category-header">
+                                    <h4><i class="fas fa-code"></i> Core PHP Projects</h4>
+                                    <span class="project-count-badge">5 Projects</span>
+                                </div>
+                                <div class="project-grid">
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>PHP Radius</h5>
+                                        <p class="project-desc">Cloud-based Bandwidth Management and ISP Billing System</p>
+                                    </div>
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>FusionSpot</h5>
+                                        <p class="project-desc">Wi-Fi Hotspot Management Software for hospitality and education</p>
+                                    </div>
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>PHP GST</h5>
+                                        <p class="project-desc">Multi-user GST Billing and Inventory System</p>
+                                    </div>
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>PHP Cold</h5>
+                                        <p class="project-desc">Cold Storage Management System</p>
+                                    </div>
+                                    <div class="project-item animate-on-scroll">
+                                        <h5>PHP Stock</h5>
+                                        <p class="project-desc">Inventory and Warehouse Management Software</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-category marketing-projects">
+                                <div class="category-header">
+                                    <h4><i class="fas fa-bullhorn"></i> Digital Marketing Expertise</h4>
+                                </div>
+                                <div class="marketing-grid">
+                                    <div class="marketing-item animate-on-scroll">
+                                        <h5><i class="fab fa-wordpress"></i> Product Site Build</h5>
+                                        <ul class="marketing-list">
+                                            <li>Content Writing</li>
+                                            <li>Product Documentation</li>
+                                            <li>Contact Form Integration</li>
+                                            <li>SEO-optimized Blog Posts</li>
+                                        </ul>
+                                    </div>
+                                    <div class="marketing-item animate-on-scroll">
+                                        <h5><i class="fas fa-search"></i> SEO</h5>
+                                        <ul class="marketing-list">
+                                            <li>Keyword Research</li>
+                                            <li>Technical & On-Site SEO</li>
+                                            <li>On-page Optimization</li>
+                                            <li>Off-page SEO Strategies</li>
+                                        </ul>
+                                    </div>
+                                    <div class="marketing-item animate-on-scroll">
+                                        <h5><i class="fab fa-facebook"></i> Social Media Marketing</h5>
+                                        <ul class="marketing-list">
+                                            <li>Page Creation & Management</li>
+                                            <li>Content Strategy</li>
+                                            <li>Targeted Advertising</li>
+                                            <li>Audience Engagement</li>
+                                        </ul>
+                                    </div>
+                                    <div class="marketing-item animate-on-scroll">
+                                        <h5><i class="fab fa-youtube"></i> YouTube Optimization</h5>
+                                        <ul class="marketing-list">
+                                            <li>Thumbnail Design</li>
+                                            <li>SEO-friendly Headlines</li>
+                                            <li>Tag Analysis</li>
+                                            <li>Channel Growth Strategy</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="tools-section">
+                                    <h5><i class="fas fa-tools"></i> Marketing Tools & Expertise</h5>
+                                    <div class="tools-grid">
+                                        <div class="tool-category">
+                                            <h6>Browser Extensions</h6>
+                                            <div class="tool-badges">
+                                                <span class="tool-badge">CMS Detective</span>
+                                                <span class="tool-badge">Keywords Everywhere</span>
+                                                <span class="tool-badge">MozBar</span>
+                                                <span class="tool-badge">SEO Extension</span>
+                                            </div>
+                                        </div>
+                                        <div class="tool-category">
+                                            <h6>Platforms & Analytics</h6>
+                                            <div class="tool-badges">
+                                                <span class="tool-badge">Ahrefs</span>
+                                                <span class="tool-badge">SEMrush</span>
+                                                <span class="tool-badge">Google Analytics</span>
+                                                <span class="tool-badge">Search Console</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Key Skills</h2>
+            
+            <div class="skills-filter">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th-large"></i>
+                    All Skills
+                </button>
+                <button class="filter-btn" data-filter="frontend">
+                    <i class="fas fa-laptop-code"></i>
+                    Frontend
+                </button>
+                <button class="filter-btn" data-filter="backend">
+                    <i class="fas fa-server"></i>
+                    Backend
+                </button>
+                <button class="filter-btn" data-filter="database">
+                    <i class="fas fa-database"></i>
+                    Database
+                </button>
+                <button class="filter-btn" data-filter="devops">
+                    <i class="fas fa-cloud"></i>
+                    DevOps
+                </button>
+                <button class="filter-btn" data-filter="qa">
+                    <i class="fas fa-check-circle"></i>
+                    QA
+                </button>
+                <button class="filter-btn" data-filter="tools">
+                    <i class="fas fa-tools"></i>
+                    Tools
+                </button>
+                <button class="filter-btn" data-filter="os">
+                    <i class="fas fa-desktop"></i>
+                    OS
+                </button>
+            </div>
+
+            <div class="skills-category-grid">
+                <!-- Frontend Category -->
+                <div class="skills-category-card" data-category="frontend">
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="95">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <i class="fab fa-js"></i>
+                            <span>Javascript</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <i class="fas fa-sync"></i>
+                            <span>Ajax</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Category -->
+                <div class="skills-category-card" data-category="backend">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="95">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <i class="fab fa-laravel"></i>
+                            <span>Laravel</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <i class="fas fa-plug"></i>
+                            <span>REST API</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database Category -->
+                <div class="skills-category-card" data-category="database">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="90">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps Category -->
+                <div class="skills-category-card" data-category="devops">
+                    <div class="category-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>DevOps</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="80">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <i class="fab fa-gitlab"></i>
+                            <span>GitLab</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QA Category -->
+                <div class="skills-category-card" data-category="qa">
+                    <div class="category-header">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Quality Assurance</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="85">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>JMeter Load Testing</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Category -->
+                <div class="skills-category-card" data-category="tools">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="85">
+                            <i class="fab fa-jira"></i>
+                            <span>JIRA Tool</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operating Systems Category -->
+                <div class="skills-category-card" data-category="os">
+                    <div class="category-header">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Operating Systems</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="85">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux Ubuntu</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <i class="fab fa-windows"></i>
+                            <span>Microsoft Windows</span>
+                            <div class="skill-bar"><div class="progress"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="#" target="_blank">LinkedIn Profile</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="#" target="_blank">GitHub Profile</a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+                <p class="copyright"> 2025 Your Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
